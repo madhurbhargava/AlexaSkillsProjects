@@ -1,6 +1,6 @@
-var sid = 'ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX’;
-var token = '4bXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX’;
-var sender = '+31XXXXXXXXXX’;
+var sid = 'ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
+var token = '4bXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
+var sender = '+31XXXXXXXXXX';
 
 var https = require('https');
 var queryString = require('querystring');
@@ -77,7 +77,7 @@ function onIntent(intentRequest, callback) {
         intentName = intentRequest.intent.name;
     if("SendMessage" === intentName){
         var text = intent.slots.Text.value;
-        var recipient = '+31XXXXXXXXXX’;
+        var recipient = '+31XXXXXXXXXX';
         SendMessage(recipient, text,callback);
     } else {
         throw "Intent not recognized";
