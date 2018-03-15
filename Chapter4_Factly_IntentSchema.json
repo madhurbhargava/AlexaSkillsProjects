@@ -1,0 +1,16 @@
+{
+  "intents": [
+    {
+      "slots": [
+        {
+          "name": "Choice",
+          "type": "LIST_OF_CHOICES"
+        }
+      ],
+      "intent": "Answer"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    }
+  ]
+}
