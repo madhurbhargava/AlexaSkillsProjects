@@ -3,7 +3,7 @@ exports.handler = (event, context, callback) => {
         case "LaunchRequest":
         context.succeed(
           generateResponse(
-            buildSpeechletResponse("Welcome to Hello World Greeter.", true)
+            buildSpeechletResponse("Welcome to Hello World Greeter.", false)
           )
         )
             break;
