@@ -1,0 +1,53 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "factly",
+            "intents": [
+                {
+                    "name": "Answer",
+                    "slots": [
+                        {
+                            "name": "Choice",
+                            "type": "LIST_OF_CHOICES"
+                        }
+                    ],
+                    "samples": [
+                        "the answer is {Choice}",
+                        "{Choice}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "LIST_OF_CHOICES",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "1"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "2"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "3"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "4"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
